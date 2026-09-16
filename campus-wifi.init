@@ -1,0 +1,15 @@
+#!/bin/sh /etc/rc.common
+# 由 procd 管理后台进程并在异常退出时按限制重启。
+START=95
+STOP=10
+USE_PROCD=1
+
+start_service() {
+    procd_open_instance
+    procd_set_param command /usr/bin/python3 /usr/lib/campus-wifi/campus_wifi.py run
+    # 短时退出判定阈值、重启等待时间、连续重试限值。
+    procd_set_param respawn 3600 5 5
+    procd_set_param stdout 1
+    procd_set_param stderr 1
+    procd_close_instance
+}

@@ -1,0 +1,22 @@
+{
+  "description": "使用虚构数据与独立 JavaScript 大整数运算生成的对照结果，遵循网页的分块和零填充格式。",
+  "modulus": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff93",
+  "exponent": "10001",
+  "cases": [
+    {
+      "password": "Test-123!",
+      "mac": "abc",
+      "encrypted": "d0402787d44ab6b50cab68a154ebc8995937c3a47bd1191f4480ed6841846cffda4e276327cf19d6c5e7d1016e1c70a371f164da074920fa37e8c7cf6feabe9ec79adfcf54514100e893bdc117fc05ef45d870f6e744db447857c00f70a5bf62724205ad493ab44769f830947d2bdfb7ad44a4518f69b579a7c183a15d6a66e2"
+    },
+    {
+      "password": "!@#$%^&*()",
+      "mac": "001122334455",
+      "encrypted": "94d5d044162ddc80aebdef3a48816a851bcfd5d7f48b4393e6f50a7e3e20de713efc73decca3ee81d0bdd0c46261acff931d47d49a6ee0762a7620c0bb91f4c3ca82b53794d57567dbe805a65dfeaf2f3d930ebcd63b191026811902824fdbd7e25611e7dd6b795ff37d5cf406f3a1fd63125ae18e56405856bf1537b97eaee2"
+    },
+    {
+      "password": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "mac": "abc",
+      "encrypted": "0dd4b952454927ce28dde6a565116c963e151610cebf637c881e1702c92084de352e28a15fa561efd48f89c9d6fcd623c8efe7068e5132d32507fed2c4a331757674c30b2d5e008669c23898e1016c44b040320a983b4970fe55d5b5ce21b1b480331981b09b3418452e4084413ab60086e650172bf9948f2ac859eb5db0fa8a 4d20130b9a421e29aab7abbb9e6beff48a7b04db8f4d46c758b1bbcff21842d58b311d43c36fd6ec095b1c93122f131b6db5a2af1c6fc3b8163ed4a3dcb2ee0f947ed3daba1b425f4461dd1ce34c7a785c3169397c6a901cb1935c99dcd3f0dfe5a2638aa2fb3da3e677cf0fac335a479015efafe0e1485fa9b405f4d447ac30"
+    }
+  ]
+}
