@@ -1,3 +1,5 @@
+**提醒：本项目全部在 ChatGPT Work 中生成，是许愿式编程的产物。**
+
 # Campus Wi-Fi
 
 让 GL.iNet MT3600BE 路由器根据 Wi-Fi 连接情况登录校园网。
